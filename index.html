@@ -1,24 +1,10 @@
 ---
 layout: default
 ---
-
 <div class="posts">
-  {% for post in paginator.posts %}
-    <article class="post">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        <h1>{{ post.title }}</h1>
-
-        <div>
-          <p class="post_date">{{ post.date | date: "%B %e, %Y" }}</p>
-        </div>
-      </a>
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  
+  <img src ="images/frontpage.jpg">
+  <p>I'm a clinician on a mission. You'll find here musings on the intersection of health and technology - as someone who straddles both fields</p>
 
   <!-- pagination -->
   {% if paginator.total_pages > 1 %}
